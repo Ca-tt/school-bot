@@ -60,7 +60,7 @@ class UserDialogs:
             active_state=None,
             next_state=None,
             
-            bot_before_message=self.messages["schedule"]["start"],
+            bot_before_message="",
 
             database_activation_position="after_messages",
             database_method_name="schedule.show_schedule",
