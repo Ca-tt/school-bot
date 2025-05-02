@@ -43,14 +43,8 @@ class UserDialogs:
             formatted_variables=["user.real_name"],
         )
         
-        #? /schedule 
-        # self.dialog_generator.set_command(
-        #     command_name="schedule",
-        #     access_level=["student", "admin"], 
-            
-        #     bot_before_multiple_messages=self.messages["schedule"],
-        # )
 
+        #? /schedule 
         self.dialog_generator.make_dialog(
             access_level=["student", "admin"],
             
@@ -67,6 +61,7 @@ class UserDialogs:
 
             bot_after_message=self.messages["schedule"]["zoom_link"]
         )
+        
         
         #? /card 
         self.dialog_generator.set_command(
