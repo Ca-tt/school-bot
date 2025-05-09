@@ -61,6 +61,15 @@ class UserDialogs:
 
             bot_after_message=self.messages["schedule"]["zoom_link"]
         )
+        #? /schedule 
+        self.dialog_generator.make_dialog(
+            access_level=["student", "admin"],
+            
+            handler_type="command",
+            command_name="hometask",
+            
+            bot_before_message=self.messages["hometask"],
+        )
         
         
         #? /card 
@@ -113,25 +122,6 @@ class UserDialogs:
             database_method_name="get_latest_versions_info",
         )
         
-        #! Sequences
-        
-        #? /hometask (step 1) -> show home task and buttons (edit / remind me)  
-        self.dialog_generator.make_dialog(
-            access_level=["student"],
-            handler_type="command",
-            command_name="hometask",
-            
-            handler_prefix="ht",
-            buttons_callback_prefix="hometask_actions",
-            
-            active_state=None,
-            next_state=None,
-            
-            formatted_messages=[self.messages["hometask"]["task"]],
-            formatted_variables=["user.hometask"],
-            
-            keyboard_with_before_message="hometask_actions",
-        )
         
         self.log(f"Команды и диалоги пользователей включены 🎬")
         

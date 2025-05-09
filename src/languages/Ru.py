@@ -1,6 +1,7 @@
-#? Displayed in menu from left
+# ? Displayed in menu from left
 MENU_COMMANDS_RU = {
     "schedule": "Когда мой урок?",
+    "hometask": "Домашка",
     "done": "Заполнить отчёт",
     "payment": "Оплата",
     "version": "Что нового в боте?",
@@ -20,46 +21,18 @@ BOT_MESSAGES_RU = {
     "start": [
         """
 /schedule Когда мой урок?
+/hometask Домашка
 /done Заполнить отчёт
 
 /payment Оплата
 /version Что нового в боте?
 """
     ],
-
-"schedule": {
-    "start": "На этой неделе мы встречаемся:",
-    "zoom_link": "Ссылка на Zoom:\nhttps://us04web.zoom.us/j/5302871397?pwd=b1hVdmRKWXpvc3Vkblo5WkxmamVCdz09",
-    "cleared": "График очищен, наполни его в /us",
-},
-
-    # ? /schedule x zoom
-#     "schedule": [
-#         """
-# *Воскресенье*
-
-# *09:00*
-# 😀 Ира
-
-# *11:00*
-# 😎 Даня
-# 🤠 Дима 
-# 🎪 Назар 
-
-# *13:10*
-# 🚀 Максим 
-# 🛹 Артём
-
-# *13:30* 
-# 🎭 Илья х Назар
-
-# *15:20*
-# 🧨 Олег
-# """,
-#         """Ссылка на Zoom:
-# https://us04web.zoom.us/j/5302871397?pwd=b1hVdmRKWXpvc3Vkblo5WkxmamVCdz09
-# """,
-    # ],
+    "schedule": {
+        "start": "На этой неделе мы встречаемся:",
+        "zoom_link": "Ссылка на Zoom:\nhttps://us04web.zoom.us/j/5302871397?pwd=b1hVdmRKWXpvc3Vkblo5WkxmamVCdz09",
+        "cleared": "График очищен, наполни его в /us",
+    },
     # ? /payment
     "payment": {
         "amount": "Цена в этом месяце: _{} грн_",
@@ -91,15 +64,7 @@ BOT_MESSAGES_RU = {
     # ? /version
     "version_intro": "Что нового в боте 👓",
     # ? /hometask
-    "hometask": {
-        "empty": "Домашнего задания пока нет",
-        "task": """
-Домашка на эту неделю:
-
-{}
-""",
-        "buttons": {"edit_button": "Изменить д/з"},
-    },
+    "hometask":  "Домашнее задание:\n\nhttps://www.notion.so/expnd/1ed3a4b40c6380c0bb39f9d1510fe72f",
     #! Admins
     # ? /clean, /fill
     "clean_success": "База пользователей очищена 🚮",
@@ -161,13 +126,13 @@ BOT_MESSAGES_RU = {
         "unpaid_amount": "В пути: *{} грн*",
         "success_user_update": "Оплата отмечена! Смотри /payment",
     },
-    #? /sched (admin)
+    # ? /sched (admin)
     "schedule_admin": {
         "days_list": "Какой день меняем?",
         "empty_schedule": "На этот день ничего не запланировано! Впиши новое расписание",
         "show_day_schedule": "Расписание на этот день:",
         "success_schedule_update": "Новое расписание прибыло! Смотри /schedule",
-    }
+    },
 }
 
 

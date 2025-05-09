@@ -102,7 +102,7 @@ class NewStudent():
             "done_lessons": 0,
             "lessons_left": self.max_lessons,
 
-            "hometask": Language().messages["hometask"]["empty"],
+            # "hometask": Language().messages["hometask"]["empty"],
 
             "joined_at": datetime.now().strftime("%d-%m-%Y %H:%M:%S"),
             
