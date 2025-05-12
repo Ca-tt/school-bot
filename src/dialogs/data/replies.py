@@ -14,9 +14,3 @@ ADMIN_BOT_REPLIES = {
 
 
 
-# SHARED_BOT_REPLIES = {
-#     'help': '\nЕсли есть вопросы или нашёл баг в боте, пиши мне в личку @best_prepod \n\nВыйти в меню: /menu',
-# }
-# merge objects
-# PARTNER_BOT_REPLIES.update(SHARED_BOT_REPLIES)
-# ADMIN_BOT_REPLIES.update(SHARED_BOT_REPLIES)

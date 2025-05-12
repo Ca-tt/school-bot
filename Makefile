@@ -1,5 +1,5 @@
-bot:
-	pipenv run uvicorn src.main:app --log-level debug
+run:
+	poetry run uvicorn src.main:app --log-level debug
 
 ready:
 	git add . && git commit && git push
