@@ -23,6 +23,8 @@ class InitialUsers:
     def pin_ids_to_users(self) -> None:
         self.user_ids: list = Dotenv().user_ids
         print("🐍 self.user_ids (pin ids): ", self.user_ids)
+        # print("🐍 File: users/InitialUsers.py | Line: 25 | pin_ids_to_users ~ self.user_ids", len(self.user_ids))
+        # print("🐍 File: users/InitialUsers.py | Line: 25 | pin_ids_to_users ~ self.user_ids", len(self.initial_users))
         
         for user_id, user in zip(self.user_ids, self.initial_users):
             user["user_id"] = user_id

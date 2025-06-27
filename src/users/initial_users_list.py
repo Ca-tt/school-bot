@@ -5,31 +5,10 @@ INITIAL_USERS = [
         "access_level": "admin",
     },
     {
-        "real_name": "Кирилл",
-        "last_name": "Кипчарский",
-        "payment_amount": 0,
-        "max_lessons": 4,
-        "access_level": "student",
-    },
-    {
         "real_name": "Ярослав",
         "last_name": "Горбань",
         "payment_amount": 195,
         "max_lessons": 8,
-        "access_level": "student",
-    },
-    {
-        "real_name": "Ира",
-        "last_name": "Гыра",
-        "payment_amount": 70,
-        "max_lessons": 4,
-        "access_level": "student",
-    },
-    {
-        "real_name": "Даня",
-        "last_name": "Оврашко",
-        "payment_amount": 30,
-        "max_lessons": 4,
         "access_level": "student",
     },
     {
@@ -72,13 +51,6 @@ INITIAL_USERS = [
         "last_name": "Лукьяненко",
         "payment_amount": 0,
         "max_lessons": 8,
-        "access_level": "student",
-    },
-    {
-        "real_name": "Андрей",
-        "last_name": "Сидаш",
-        "payment_amount": 85,
-        "max_lessons": 4,
         "access_level": "student",
     },
     {

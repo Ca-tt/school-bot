@@ -86,6 +86,7 @@ class Database:
     def update_remote_users(self):
         # save initial users to database
         for initial_user in self.initial_users:
+            print("🐍 File: database/Database.py | Line: 89 | update_remote_users ~ initial_user",initial_user)
             filter_by_id = { "user_id": initial_user["user_id"] }
             is_user_exists_in_db = self.mongoDB.users_collection.find_one(filter=filter_by_id)
             
