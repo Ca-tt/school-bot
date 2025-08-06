@@ -316,6 +316,8 @@ class DialogGenerator:
 
             if not next_state:
                 state.delete()
+                
+            self.send_action_notification(active_user=active_user, command_name=command_name)
 
         # choose type of message handler
         if handler_type == "command":
@@ -340,11 +342,14 @@ class DialogGenerator:
                     f"{handler_prefix}:{handler_property}"
                 ),
             )
+            
 
     # * HELPERS
     def send_action_notification(self, active_user: dict, command_name):
         # check if user is admin
-        if active_user["user_id"] in Database().admin_ids:
+        print("🐍 active_user:", active_user["user_id"])
+        
+        if active_user["user_id"] in Cache().admin_ids:
             self.log(
                 f"⚠ Admin here, don't sending notification: { active_user["real_name"] }"
             )
